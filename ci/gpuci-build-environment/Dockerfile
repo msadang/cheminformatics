@@ -24,7 +24,7 @@ channels: \n\
   - defaults \n" > /conda/.condarc \
       && cat /conda/.condarc ;
 
-COPY $PWD/ci/env.yml /tmp
+COPY ci/gpuci-build-environment/ci/env.yml /tmp
 
 # Create parabricks conda env and make default
 RUN source activate base
